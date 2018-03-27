@@ -1,0 +1,621 @@
+//
+// SECTION MAIN
+// --------------------------------------------------------------
+
+#info {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	padding: 20px;
+	z-index: 9999;
+	display: none;
+
+}
+
+.section-main {
+	background-color: $color-main;
+	color: $color-text-white;
+	font-family: $font-family;
+	position: relative;
+	height: 650px;
+
+	header {
+
+		.nav-bar {
+			display: flex;
+  			justify-content: space-between;
+
+			.logo {
+				display: inherit;
+				margin: 2em;
+
+				h2 {
+					text-transform: uppercase;
+					font-size: 1.2em;
+					font-weight: 600;
+					margin: 0;
+				}
+
+				:first-child {
+					color: darken( $color-text-white, 25%);
+					font-weight: 400;
+				}
+			}
+			
+			nav {
+
+				display: inherit;
+
+				a {
+					margin: 2em;
+					text-decoration: none;
+					color: $color-text-white;
+				}
+			}
+		}
+	}
+
+	.cloud-1 {
+		width: 60px;
+		height: auto;
+		opacity: 0.5;
+
+		position: absolute;
+		top: 10em;
+		left: 15em;
+
+		animation: float1 4s infinite;
+	}
+
+	.cloud-2 {
+		width: 60px;
+		height: auto;
+		opacity: 0.5;
+
+
+		position: absolute;
+		top: 14em;
+		right: 13em;
+
+		animation: float2 6s infinite;
+	}
+
+	.cloud-3 {
+		width: 30px;
+		height: auto;
+		opacity: 0.5;
+
+		position: absolute;
+		top: 10em;
+		right: 30em;
+
+		animation: float2 4s infinite;
+	}
+
+	.cloud-4 {
+		width: 38px;
+		height: auto;
+		opacity: 0.5;
+
+		position: absolute;
+		top: 7em;
+		left: 43em;
+
+		animation: float2 5s infinite;
+	}
+
+	.rocket {
+		width: 55px;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		right: 20%;
+	}
+
+	#smoke {
+
+		#smokeR {
+			position: absolute;
+			z-index: 2;
+			right: 43%; bottom: -16px;
+			transform: rotate(90deg);
+
+
+				span {
+					display: block;
+					position: absolute;
+					bottom: -15px; left: 50%; margin-left:-20px;
+					height: 0px; width: 0px;
+					border: 15px solid #4b4b4b;
+					border-radius: 15px;
+					left: -14px; opacity: 0;
+					transform: scale(0.2);
+				}
+
+				.s0 { animation: smokeL 10s 0s infinite }
+				.s1 { animation: smokeR 10s 1s infinite }
+				.s2 { animation: smokeL 10s 2s infinite }
+				.s3 { animation: smokeR 10s 3s infinite }
+				.s4 { animation: smokeL 10s 4s infinite }
+				.s5 { animation: smokeR 10s 5s infinite }
+				.s6 { animation: smokeL 10s 6s infinite }
+				.s7 { animation: smokeR 10s 7s infinite }
+				.s8 { animation: smokeL 10s 8s infinite }
+				.s9 { animation: smokeR 10s 9s infinite }
+			}
+
+			#smokeL {
+			position: absolute;
+			z-index: 2;
+			right: 55%; bottom: 22px;
+			transform: rotate(-90deg);
+
+
+				span {
+					display: block;
+					position: absolute;
+					bottom: -15px; left: 50%; margin-left:-20px;
+					height: 0px; width: 0px;
+					border: 15px solid #4b4b4b;
+					border-radius: 15px;
+					left: -14px; opacity: 0;
+					transform: scale(0.2);
+				}
+
+				.s0 { animation: smokeL 10s 0s infinite }
+				.s1 { animation: smokeR 10s 1s infinite }
+				.s2 { animation: smokeL 10s 2s infinite }
+				.s3 { animation: smokeR 10s 3s infinite }
+				.s4 { animation: smokeL 10s 4s infinite }
+				.s5 { animation: smokeR 10s 5s infinite }
+				.s6 { animation: smokeL 10s 6s infinite }
+				.s7 { animation: smokeR 10s 7s infinite }
+				.s8 { animation: smokeL 10s 8s infinite }
+				.s9 { animation: smokeR 10s 9s infinite }
+			}
+	}
+
+	.section-content{
+		vertical-align: middle;
+		padding: 13% 100px;
+		text-align: center;
+
+		h3 {
+			margin: 0.5em 0 9em 0;
+			font-size: 1em;
+		}
+
+		p {
+			max-width: 550px;
+			margin: 0 auto;
+			opacity: 0.7;
+		}
+
+		}	
+}
+
+.typewriter {
+	display: inline-block;
+
+	h1 {
+		font-size: 3em;
+		overflow: hidden;
+		border-right: 0.15em solid orange;
+		white-space: nowrap;
+		margin: 0 auto;
+		letter-spacing: 0.10em;
+		animation:
+			typing 2s steps(30, end),
+			blink-caret .5s step-end infinite;
+	}
+
+}
+
+//
+// SECTION ABOUT
+// --------------------------------------------------------------
+
+.section-one {
+	background-color: $color-bg-about;
+	color: $color-text-dark;
+	font-family: $font-family;
+
+	.section-content {
+
+		position: relative;
+		height: 30em;
+		max-width: 1024px;
+		margin: 0 auto;
+
+		span {
+			padding: 10em 16em;
+			border: 1px solid $color-bg-education;
+			opacity: 0.7;
+			position: absolute;
+			top: 6em;
+			left: 35%;
+
+		}
+	
+		h2 {
+			position: absolute;
+			left: 50%;
+			top: 3em;
+			font-size: 2em;
+			letter-spacing: 0.2em;
+
+		}
+
+		.photo {
+			position: absolute;
+			left: 15%;
+			top: 5em;
+			width: 17em;
+			height: 22em;
+			box-shadow: 0px 0px 31px -4px rgba(0,0,0,0.27);
+
+		}
+
+		img {
+			width: 17em;
+		}
+
+		p {
+			position: absolute;
+			left: 50%;
+			top: 13em;
+			max-width: 23.750em;
+			letter-spacing: 0.05em;
+			line-height: 1.3em;
+			
+		}
+
+	}
+}
+
+//
+// SECTION EDUCATION & EXPERTISE
+// --------------------------------------------------------------
+
+.section-two {
+	background-color: $color-bg-education;
+	font-family: $font-family;
+	color: $color-text-grey;
+	width: 100%;
+	height: auto;
+	position: relative;
+
+	.section-content {
+		padding: 1.875em 1.250em;
+		max-width: 1024px;
+		margin: 0 auto;
+
+		h2 {
+			text-align: center;
+			margin-bottom: 2.5em;
+		}
+
+		img {
+			width: 3.750em;
+		}
+	}
+}
+
+.lines {
+
+	.vertical-line1 {
+		background-color: $color-line;
+		width: 1px;
+		height: 235px;
+		position: absolute;
+		top: 190px;
+		left: 49.99%;
+	}
+
+}
+
+.horizontal-line1 {
+	background-color: $color-line;
+	width: 97.5px;
+	height: 1px;
+	position: absolute;
+	top: 190px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+
+.horizontal-line2 {
+	background-color: $color-line;
+	width: 97.5px;
+	height: 1px;
+	position: absolute;
+	top: 308px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.horizontal-line3 {
+	background-color: $color-line;
+	width: 97.5px;
+	height: 1px;
+	position: absolute;
+	top: 424px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.content-left {
+	width: 49.95%;
+	float: left;
+}
+
+.content-right {
+	width: 49.95%;
+	float: right;
+}
+
+.tablet-and-less {
+	display: none;
+}
+
+.education-1,
+.education-2,
+.education-3 {
+	/* p {
+		text-align: center;
+		width: 20.875em;
+		height: 5.000em;
+		float: right;
+		// border: 1px solid;
+		border-radius: 0.3em;
+		padding: 1.3em 1.4em;
+	} */ 
+
+	img {
+		float: right;
+		padding-top: 0.5em;
+		margin: 1em 3em 2em 3em;
+	}
+
+	div {
+		float: right;
+		width: 20.875em;
+		height: 5.000em;
+		text-align: center;
+		// border: 1px solid;
+		border-radius: 0.3em;
+		padding: 0.7em 1.4em;
+		margin: 1em 0;
+
+		h3 {
+			margin: 0.5em 0 0 0;
+			font-size: 1em
+		}
+
+		p {
+			margin: 0.2em 0 0 0;
+			font-size: 0.9em;
+
+			// Education hover effect
+			
+			dfn {
+			  background: transparent;
+			  border-bottom: dashed 1px rgba(0,0,0,0.8);
+			  padding: 0 0.4em;
+			  cursor: help;
+			  font-style: normal;
+			  position: relative;
+			}
+
+			dfn::after {
+			  content: attr(data-info);
+			  display: inline;
+			  position: absolute;
+			  top: 22px; left: 0;
+			  opacity: 0;
+			  width: 230px;
+			  font-size: 1em;
+			  font-weight: 700;
+			  line-height: 1.5em;
+			  padding: 0.5em 0.8em;
+			  background: rgba(0,0,0,0.8);
+			  color: #fff;
+			  pointer-events: none; /* This prevents the box from apearing when hovered. */
+			  transition: opacity 250ms, top 250ms;
+}
+			dfn::before {
+			  content: '';
+			  display: block;
+			  position: absolute;
+			  top: 12px; left: 20px;
+			  opacity: 0;
+			  width: 0; height: 0;
+			  border: solid transparent 5px;
+			  border-bottom-color: rgba(0,0,0,0.8);
+			  transition: opacity 250ms, top 250ms;
+}
+			dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+			dfn:hover::after,
+			dfn:hover::before {opacity: 1;}
+			dfn:hover::after {top: 30px;}
+			dfn:hover::before {top: 20px;}
+	
+		}
+	}
+}
+
+.expertise-1,
+.expertise-2,
+.expertise-3 {
+
+	img {
+		float: left;
+		padding-top: 0.5em;
+		margin: 1em 3em 2em 3em;
+	}
+
+	div {
+		float: left;
+		width: 20.875em;
+		height: 5.000em;
+		text-align: center;
+		// border: 1px solid;
+		border-radius: 0.3em;
+		padding: 0.7em 1.4em;
+		margin: 1em 0;
+
+		h3 {
+			margin: 0.5em 0 0 0;
+			font-size: 1em
+		}
+
+		p {
+			margin: 0.2em 0 0 0;
+			font-size: 0.9em;
+		}
+	}
+}
+
+//
+// SECTION PROJECTs
+// --------------------------------------------------------------
+
+.section-three {
+	background-color: $color-bg-mywork;
+	font-family: $font-family;
+	color: $color-text-white;
+	width: 100%;
+	height: auto;
+	position: relative;
+
+	.section-content {
+		padding: 30px 100px;
+		text-align: center;
+
+		h2 { 
+			margin: 1.5em 0;
+
+		}
+
+		p {
+			max-width: 500px;
+			margin: 0 auto;
+			font-size: 0.8em;
+		}
+
+		div {
+
+			opacity: 0.2;
+			
+			.cloud-1 {
+				width: 59px;
+
+				position: absolute;
+				top: 6em;
+				left: 28%
+			}
+
+			.cloud-2 {
+				width: 40px;
+
+				position: absolute;
+				top: 10em;
+				left: 38%
+			}
+
+			.cloud-3 {
+				width: 45px;
+
+				position: absolute;
+				top: 4em;
+				right: 28%
+			}
+
+		}
+
+		.references {
+			margin: 3em 2em 2em;
+			opacity: 1;
+
+			a {
+				color: $color-text-white;
+				text-decoration: none;
+			}
+
+		}
+
+	}
+
+}
+
+//
+// SECTION CONTACT
+// --------------------------------------------------------------
+
+.section-four {
+	background-color: $color-bg-about;
+	color: $color-text-dark;
+	font-family: $font-family;
+
+	.section-content {
+		padding-top: 2em;
+		text-align: center;
+
+		.contact-form {
+			
+			max-width: 280px;
+			margin: 0 auto;
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 23%;
+				left: -45%;
+			}
+
+			#name,
+			#email,
+			#input-message {
+				width: 280px;
+				border: 1px solid #D2D6DA;
+				font-family: $font-family;
+				padding: 0.4em;
+				font-size: 0.7em;
+			}
+
+			#input-message {
+				resize: none;
+				width: 280px;
+				height: 6em;
+			}
+
+			#button {
+				margin: 2em 0em;
+				padding: 0.5em 2em;
+
+				border-radius: 0.4em;
+				color: $color-text-white;
+				background-color: $color-main;
+
+				font-weight: 600;
+			}
+
+			h3 {
+				font-size: 0.7em;
+				font-weight: 400;
+				margin-bottom: 0.3em;
+				float: left;
+			}
+
+		}
+	}
+
+}
+
+

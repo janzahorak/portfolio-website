@@ -1,0 +1,54 @@
+//
+// GENERAL
+// ---------------------------------------------------------
+
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.container:before,
+.group:before,
+.menu:before,
+.container:after, 
+.group:after,
+.menu:after {
+    content: " "; 
+    display: table; 
+}
+
+.container:after,
+.group:after,
+.main:after {
+    clear: both;
+}
+
+.container,
+.group,
+.main {
+    *zoom: 1;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1.25em;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}

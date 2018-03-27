@@ -1,0 +1,46 @@
+
+//
+// Typing animation 
+//--------------------------------------------------------------
+
+@keyframes typing {
+	from {width: 0}
+	to {width: 100%}
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
+}
+
+//
+// Cloud animation 
+//--------------------------------------------------------------
+
+@keyframes float1 {
+	0% {transform: translateY(0px)}
+	50% {transform: translateY(7px)}
+	100% {transform: translateY(0px)}
+}
+
+@keyframes float2 {
+	0% {transform: translateY(7px)}
+	50% {transform: translateY(0px)}
+	100% {transform: translateY(7px)}
+}
+
+//
+// Smoke animation 
+//--------------------------------------------------------------
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(0.5) translate(-10px, -60px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(0.5) translate(10px, -60px) }
+}
